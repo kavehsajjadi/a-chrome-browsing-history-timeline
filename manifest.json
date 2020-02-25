@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome History Timeline",
+  "version": "1",
+
+  "description": "",
+
+  "browser_action": {
+    "default_title": "See History"
+  },
+
+  "permissions": ["history"],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "content_security_policy": "script-src 'self' https://cdnjs.cloudflare.com; object-src 'self'"
+}

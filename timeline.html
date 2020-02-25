@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./timeline.css" />
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"
+    ></script>
+  </head>
+  <body>
+    <div
+      class="container-fluid"
+      style="min-height: 100vh; display: flex; flex-direction: column;"
+    >
+      <div class="row">
+        <div class="col">
+          <nav class="navbar navbar-expand navbar-light bg-light">
+             <span class="navbar-brand">Timeline</span>
+            <form class="form-inline my-lg-0">
+              <div class="form-group mx-sm-3">
+                <label for="startTime">Start Time:&nbsp;</label>
+                <input
+                  type="datetime-local"
+                  id="startTime"
+                  name="startTime"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group mx-sm-3">
+                <label for="endTime">End Time:&nbsp;</label>
+                <input
+                  type="datetime-local"
+                  id="endTime"
+                  name="endTime"
+                  class="form-control"
+                />
+              </div>
+            </form>
+          </nav>
+        </div>
+      </div>
+      <div class="row" style="flex: 1;">
+        <div class="col">
+          <canvas
+            id="canvas"
+            style="width: 100%; height: 100%; display: block;"
+          ></canvas>
+        </div>
+      </div>
+    </div>
+    <main></main>
+    <script src="/timeline.js"></script>
+  </body>
+</html>
